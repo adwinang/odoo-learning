@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="awesome_owl.playground">
+        <div class="p-3 d-flex flex-row gap-3 justify-content-center align-items-center">
+            <p class="m-0">hello world</p>
+            <Counter onChange="incrementSum"/>
+            <Counter onChange="incrementSum"/>
+            <p class="m-0">The sum <t t-esc="sum.value"/></p>
+        </div>
+        <Card title="'Test'">
+            <Counter onChange="incrementSum"/>
+            <t t-set-slot="second">"Second Slot"</t>
+        </Card>
+        <Card title="'Alpha'">
+            Beta
+        </Card>
+        <Card title="'Charlie'">
+            Echo
+        </Card>
+        <TodoList/>
+    </t>
+
+</templates>
